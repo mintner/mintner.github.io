@@ -1,0 +1,221 @@
+@media only screen and (min-width:900px) {
+
+* { margin: 0; box-sizing: border-box; } 
+
+/*--------BODY----------*/
+
+body { 
+    font-size: 16px; 
+    line-height: 19px;
+    font-family: 'Libre Franklin', sans-serif;
+    color: #100f0f;
+}
+
+/*-------Header------*/
+
+.header {
+    display: flex;
+    flex-flow: row nowrap;
+    background-color: #8AA39B;
+    padding: 1.5% 2%;
+    max-width: 100%;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+.header h1 {
+    font-size: 3rem;
+    line-height: normal;
+    color: whitesmoke;
+    text-shadow: 2px 2px 8px #40544d;
+}
+    
+.header img {
+     width: 140px;
+     margin: auto;
+}
+    
+.heading-text {
+    font-family: "Libre Franklin", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+    
+.subheading {
+    color: whitesmoke;
+    align-self: center;
+    text-shadow: 2px 2px 8px #1c2220;
+    font-style: italic;
+    font-size: 1.2rem;    
+}
+    
+.currentconditions {
+    display: flex;
+    flex-flow: column;
+    color: whitesmoke;
+    text-shadow: 1px 1px #141313;
+    font-weight: bold;
+    padding: 1%;
+    background-color: #676f54;
+    font-size: .8rem;
+    border-radius: 15px;
+    box-shadow: 10px 10px 5px -3px rgba(9, 9, 9, 0.58)
+}
+    
+.currentconditions img {
+    width: 90px;
+}
+    
+.currentconditions p {
+    align-self: center;
+} 
+
+/*-------Navigation--------*/
+
+nav button {
+    display: none;
+}
+
+nav {
+    display: flex;
+    max-width: 100%;
+    margin: 0;
+    background-color: #676f54;
+}
+
+nav ul {
+    list-style-type: none;
+    text-shadow: 1px 1px black;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 27px;
+    margin: 0;
+    padding: .4rem;
+    background-color: #676f54;
+}
+
+nav ul.hide {
+    display: flex;
+}
+
+nav ul li.active a { 
+    color: whitesmoke;
+    background-color: #475552; 
+}
+
+nav ul li a:hover { 
+    color: #9fbbb5; 
+    background-color: rgba(92,111,104,0.4); 
+}
+
+nav ul li a {
+    color: whitesmoke;
+    text-align: center;
+    padding: .4rem 1rem .4rem 1rem;
+    text-decoration: none;
+}
+
+/*---------Main-------*/
+
+.hero {    
+    width: 100%;
+    height: auto;
+    margin: 0;  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 10px 10px 15px -6px rgba(9, 9, 9, 0.58)
+}
+
+.hero-figure {    
+    position: absolute;
+    top: 3%;
+    left: 3%;
+    display: flex;
+    flex-direction:column;
+    color: whitesmoke;
+    background-color:  rgba(92, 111, 104, 0.8);
+    font-size: large;
+    overflow: hidden;
+    padding-right: 2%;
+    box-shadow: 10px 10px 15px -6px rgba(9, 9, 9, 0.58)
+}
+
+table {
+    border-collapse: collapse;
+    width: auto;
+    box-shadow: 10px 10px 15px -6px rgba(9, 9, 9, 0.58)
+}
+
+table, th, td {
+    border: 1px solid black;
+    text-align: center;
+    background-color: rgba(135, 177, 177, 0.39);
+    color: black;
+}
+
+th {
+    height: auto;
+    background-color: rgba(135, 177, 177, 0.8);
+}    
+
+td {
+    background-color: rgba(135, 177, 177, 0.2);
+    padding: 1rem;
+}
+
+section.forecast {
+    display: block;
+    position: relative;
+    padding: 1.2rem;
+}
+
+section.forecast h3 {
+    padding-bottom: 1%; 
+    padding-left: 25px;
+    color: #373232;
+    text-shadow: 2px 2px rgba(188, 184, 184, 0.58) 
+}
+
+main p {
+    padding: .2rem 1rem .2rem 1rem;
+}
+
+main h2 {
+    color: #373232;
+    padding: .8rem;
+    text-align: center;
+    text-shadow: 2px 2px rgba(188, 184, 184, 0.58)   
+}
+
+article h3 {
+    padding-left: 1rem;
+}
+
+
+/*----footer-----*/
+
+.footer {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    background-color: #8AA39B;
+    max-width: 100%;
+    margin-top: 1em;
+    padding: .7%;
+    color:whitesmoke;
+
+}
+
+/* Gallery Page CSS */
+    
+div.gallery {
+    grid-template-columns: repeat(3, 32%);
+}
+
+div.gallery figure:hover {
+  box-shadow: 3px 3px 6px rgba(0,0,0,0.4);
+}
+}

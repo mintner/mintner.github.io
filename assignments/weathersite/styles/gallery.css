@@ -1,0 +1,57 @@
+ /*-----------Gallery CSS---------*/
+
+main {
+    max-width: 1200px;
+}
+
+  main h1 {
+    font-size: 30px;
+    font-family: 'Libre Franklin', serif;
+    color: #373232;
+    padding: .3rem;
+    text-align: center;
+    text-shadow: 2px 1px rgba(190, 191, 195, 0.53)   
+}
+
+div.gallery {
+    display: grid;
+    padding: 0 2% 1% 2%;
+  	grid-template-columns: repeat(1, 100%);
+    grid-auto-rows: 1fr;
+}
+
+div.gallery figure {
+    margin: 0 0 5px 0;
+    border: solid .1px rgb(191, 187, 187);
+    }
+
+div.gallery figure img {
+    width: 100%;
+    border: none;
+}
+
+div.gallery figure figcaption {
+    text-align: center;
+    font-size: .9rem;
+    font-weight: bold;
+    padding-bottom: 4px;
+}
+
+@media only screen and (min-width:500px) {
+      
+div.gallery {        
+    grid-template-columns: repeat(2, 48%);
+    grid-gap: 20px;
+  }
+}
+
+@media only screen and (min-width:900px) {
+    
+div.gallery {
+    grid-template-columns: repeat(3, 31%);
+}
+
+div.gallery figure:hover {
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.54);
+}
+}

@@ -1,0 +1,214 @@
+@media only screen and (min-width:768px) {
+
+* { margin: 0; box-sizing: border-box; } 
+
+/*--------BODY----------*/
+
+body { 
+    font-size: 18px; 
+    line-height: 22px;
+    font-family: 'Libre Franklin', sans-serif;
+    color: #100f0f;
+}
+
+/*-------Header------*/
+
+header {
+    background-color: #8AA39B;
+    text-align:center;
+    margin: auto;
+    padding: .5rem;
+    color: #f5f5f5;
+    max-width: 100%;
+}
+
+.header img {
+    display: inline-block;
+    width: 120px;
+    height: auto;
+    vertical-align: middle;
+    margin: .2em;
+}
+
+.logo {
+    display: inline-block;
+    vertical-align: middle;
+    padding: .5rem;
+
+}
+
+.headertext {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    font-size: 1.5rem;
+    color: black;
+    line-height: normal;
+    text-align: center;
+    margin: 0 0 0 0;
+}
+
+.subheading {
+    color: black;
+    font-style: italic;
+    text-align: center;
+    margin: 0;
+    font-size: 1rem;
+}
+
+.currentconditions {
+    display: inline-block;
+    margin: 1rem 0 1rem 5rem;
+    padding: 1rem;
+    vertical-align: middle;
+    color: white;
+    background-color: #676f54;
+    font-size: .9rem;
+}
+
+.currentconditions img{
+    width: 90px;
+    height: auto;
+}
+
+/*-------Navigation--------*/
+
+nav button {
+    display: none;
+}
+
+nav {
+    max-width: 100%;
+    margin: auto;
+    background-color: #676f54;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    margin-left: 2%;
+    padding: .5rem;
+    overflow: hidden;
+    background-color: #676f54;
+}
+
+nav ul li {
+    float: left;
+}
+nav ul li a {
+    display: inline-block;
+    color: whitesmoke;
+    text-align: center;
+    padding: .5rem;
+    text-decoration: none;
+    border: none;
+}
+
+nav ul li.active a { 
+    color: black;
+    background-color: #79b4a9; 
+}
+
+nav ul li a:hover { 
+    color: #d1f2ba; 
+    background-color: rgba(92,111,104,0.4); 
+}
+
+/*---------Main-------*/
+
+.hero {    
+    width: 100%;
+    height: auto;
+    margin: 0;  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-figure {    
+    position: absolute;
+    top: 5%;
+    left: 3%;
+    display: inline-block;
+    padding: 1.2rem;
+    vertical-align: middle;
+    color: whitesmoke;
+    background-color:  rgba(92,111,104,0.8);
+    font-size: 1rem;
+    line-height: 1.8rem;
+}
+
+table {
+    border-collapse: collapse;
+    width: auto;
+}
+table, th, td {
+    border: 1px solid black;
+    text-align: center;
+    background-color: #87b1b1;
+    color: black;
+}
+th {
+    height: auto;
+}    
+.forecast {
+    display: block;
+    position: relative;
+    padding: 1.2rem;
+}
+main p {
+    padding: .2rem 1rem .2rem 1rem;
+}
+
+main h2 {
+    padding: .3rem;
+    text-align: center;   
+}
+
+article h3 {
+    padding-left: 1rem;
+}
+
+
+/*----footer-----*/
+
+footer {
+    background-color: #8AA39B;
+    text-align:center;
+    margin: auto;
+    color: #f5f5f5;
+    max-width: 100%;
+    font-size: 16px;
+    padding: .5px 2%;
+}
+
+footer, footer a {
+    text-align: center;
+    background-color: #8AA39B;
+    color: whitesmoke;
+}
+}
+
+/*---------Medium--------*/
+
+@media only screen and (min-width:677px) and (max-width:975px) {
+
+div.currentconditions {
+    display: none;
+}
+
+
+@media only screen and (max-width:386px) {
+
+    .header img {
+        width: 70px;
+    }
+
+    .logo {
+        width: 70px;
+    
+    }
+}
+}

@@ -1,0 +1,40 @@
+@media only screen and (min-width:320px) and (max-width: 670px) {
+   
+    header, nav, main, section, footer {
+        margin: auto;
+
+    }
+    
+    .hero {
+        overflow: hidden;
+    }
+    
+    section.forecast {
+        display: none;
+    } 
+  
+    h2 {
+        text-align: center;
+        padding: 1px;
+    }
+
+    article {
+        position: relative;
+        display: block;
+    }
+    div.currentconditions {
+        display: none;
+    }
+
+    .headertext h1 {
+        font-size: 2em;
+    }
+    .headertext.subheading {
+        font-size: .5em;
+    }
+    header {
+        width: 100%;
+    }
+
+
+}

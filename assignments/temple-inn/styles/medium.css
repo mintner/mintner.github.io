@@ -1,0 +1,709 @@
+@media only screen and (min-width:737px) {
+     
+.content {
+    max-width: 700px !important;
+    margin: auto;
+    }
+    
+.narrow {
+    margin: auto;
+    width: 100%;
+    }
+
+.logo {
+    width: 200px;
+    height: auto;
+}    
+    
+.headTitle {
+    display: grid;
+    text-align: left;
+    font-family: 'Noto Serif TC', serif;
+    letter-spacing: .5px;
+    margin: 0;
+    font-style: italic;
+    font-size: 31px;
+    color: #746c6c;
+    align-items: center;  
+    padding: 0;
+}
+    
+    /*------------------Nav----------------------*/
+
+nav button {
+    display: none;
+    }
+
+nav {
+    border: none;
+    background-color: transparent;
+    margin: 5px;
+    justify-content: center;
+    }
+    
+nav ul {
+    font-family: 'Dosis', sans-serif;
+    list-style-type: none;
+    margin: 0;
+}    
+
+nav ul li {
+    padding: 0; 
+    margin: 8px;    
+    }
+
+nav ul li a {
+    color: black;
+    text-align: center;
+    padding: 0;
+    text-decoration: none;
+    border-radius: 8px;
+    border-top: none;
+    font-size: 22px;
+}    
+    
+nav ul.hide {
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    justify-content: center;
+    grid-gap: 3px;
+    }
+    
+nav ul li.active a {
+    background-image: linear-gradient(#d0c3bb, #a5978e);
+    border-radius: 24px;
+    cursor: pointer;
+    border-top: 1px solid black;
+    padding: 8px 10px 10px 10px;
+    color: white;
+    font-weight: bold;
+    text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;    
+} 
+    
+/*-------------------Main---------------------------*/
+    
+.hero {
+    height: auto;
+    display: block;
+    position: relative;
+    margin: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+}
+    
+.hero img {
+    display: block;
+    margin: 0;
+    margin-bottom: 10px;
+    width: 100%; 
+    height: 360px;
+}    
+
+.onHero {
+    position: absolute;
+    display: flex;
+    top: 3%;    
+    left: 4.5%;
+    background-color: rgba(49, 49, 49, 0.64);
+    border-radius: 15px;
+    margin: 0;
+    box-shadow: 10px 10px 15px -6px rgba(9, 9, 9, 0.58);
+    max-width: 90%;
+}
+
+.onHero h1 {
+    font-style: italic;
+    color: #eaeaea;
+    padding: 0;
+    margin: 10px;
+    text-align: center;
+    font-size: 33px;
+    
+}
+
+.onHero p {
+    color: white;
+    margin: 0;
+    padding: 0 5px 5px 5px
+    
+}
+
+.bookaroom {
+    display: flex;
+    flex-direction: row;
+    font-size: 26px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 0 20px;
+    z-index: 1;
+    margin: 0 ;
+}
+
+.bookaroom button {
+    background-image: linear-gradient(#c9b6aa, #968275);
+    border: 1.5px solid #ffffff;
+    border-radius: 40px;
+    font-style:italic;
+    letter-spacing: 1.5px;
+    color: white;
+    padding: 6px 15px 10px 15px;
+    font-weight: bold;    
+}
+
+.bookaroom p {
+    color: white;
+    font-size: 26px;
+    font-style:italic;
+    margin: 7px 15px;
+    padding: 0;
+}
+
+.bookaroom button:hover {
+    cursor: pointer;
+    background-image: linear-gradient(#a5978e, #d0c3bb);
+}
+
+.svs {
+    color:white;
+    font-size: 24px;
+    padding: 10px;
+    margin: 0;
+}
+
+.svs ul {
+    padding: 0 10px 10px 20px;
+    margin: 0;
+}
+
+#svspage {
+    font-family: 'Noto Serif TC', serif;
+    font-style: italic;
+    color: white;
+    text-decoration:  underline;
+    font-weight: bold;
+    font-size: 24px;    
+}
+
+#rsrve {
+    font-family: 'Noto Serif TC', serif;
+    font-style: italic;
+    color: white;
+    text-decoration:  underline;
+    font-weight: bold;
+    font-size: 24px;
+}
+    
+#curly {
+    position: relative;
+    width: 99%;
+    height: 28px;
+    margin-top: 8px;
+    }
+    
+#curly img {
+    position: absolute;
+    height: 90%;    
+    top: 0;
+    left: 41%;
+    }
+    
+#blurb {
+    padding: 10px;
+}
+
+#blurb p {
+    font-size: 20px;
+    text-align: justify;
+    padding: 0;
+    margin: 0;
+}
+
+#flowers {
+    display: flex;
+    float: left;
+    width: 160px;
+    height: 160px;
+    padding: 0 10px 0 0;
+    margin: 0;
+}
+
+#door {
+    display: flex;
+    float: right;
+    width: 160px;
+    height: 160px;
+    padding-left: 10px;
+}
+
+#dctemple {
+    text-align: center;
+    font-size: 20px;
+    margin: 0;
+    padding: 5px;
+}
+
+#dctemple h2 {
+    font-family: 'Dosis', sans-serif;
+    padding: 30px 5px 5px 5px;
+    margin: 0;
+    
+}
+
+#dctemple p {
+    line-height: 21px;
+    padding: 0;
+    
+}
+
+.dc-info {
+    text-align: center;
+    margin-bottom: 15px;
+} 
+    
+.dc-info p {
+    font-size: 21px;
+    line-height: 24px;
+}
+    
+    
+/*-------------------Temples------------------------*/
+    
+.sched {
+    text-align: center;
+    font-size: 22px;
+}
+
+#accordion h3 {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+
+/* Caption text */
+.text {
+    font-size: 18px;
+    }
+    
+.templeGrid h4, p {
+    font-size: 16px;
+}
+    
+    
+/*---------------------Reservations--------------------*/
+    
+.avail {
+    border-spacing: 10px;
+    margin: 0 auto;
+    }
+    
+.avail h2 {
+    display: none;
+    }
+    
+/*------------------Services-------------------------*/
+
+#page {
+    position: relative;
+    top: 0%;
+    max-width: 768px;
+    height: 3800px;
+    padding: 0;
+    margin: auto;
+}
+    
+#page p {
+    font-size: 22px;    
+}
+
+#enjoy {
+    position: absolute;
+    left: 2%;
+    top: .5%;
+    width: 55%;
+}
+
+#enjoy p {
+    text-align: left;
+}
+
+#access {
+    position: absolute;
+    left: 3%;
+    top: 5%;
+    width: 30%;
+}
+    
+#access p {
+     text-align: left;   
+    }
+
+#theme {
+    position: absolute;    
+    right: 6.5%;
+    top: 6.3%;
+    width: 21%; 
+}
+
+#theme p {
+    text-align: left;
+}
+ 
+.bold {
+    font-weight: bold;
+}
+
+#ballroom {
+    position: absolute;
+    width: 375px;
+    top: 15.8%;
+    left: 49%;
+    text-align: left;
+}
+
+#ballroom p {
+    text-align: left;
+}
+    
+#make {
+    position: absolute;
+    width: 375px;
+    top: 19.1%;
+    left: 49%;
+}
+
+.link {
+    font-weight: bold;
+    color: black;
+    font-size: 22px;
+}
+
+#make p {
+    text-align: left;
+}
+
+#play-room {
+    position: absolute;
+    top: 28.3%;
+    left: 3%;
+    width: 98%
+}
+
+#play-room p {
+    text-align: left;
+}
+
+#long-term {
+    position: absolute;
+    width: 40%;
+    left: 55%;
+    top: 48.9%;
+    text-align: left;  
+    padding:0;
+    margin: 0;    
+}
+
+#long2 {
+    position: absolute;
+    top: 52.15%;
+    text-align: left;
+    width: 40%;
+    left: 55%;
+    margin: 0;
+    padding: 0;
+}
+
+#business {
+    position: absolute;
+    width: 50%;
+    top: 55%;
+    left: 3%;
+}
+    
+#business p {
+    font-size: 23px;
+    text-align: justify;
+}
+
+#breakfast {
+    position: absolute;
+    width: 96%;
+    top: 63.4%;
+}
+
+#park-tv {
+    position: absolute;
+    width: 96%;
+    top: 65%;
+    left: 2%
+}
+
+#maid {
+    position: absolute;
+    width: 96%;
+    top: 66.7%;
+    left: 2%;
+}
+
+#wifi {
+    position: absolute;
+    width: 96%;
+    top: 73.8%;
+    left: 2%;
+}
+    
+#pool-gym {
+    position: absolute;
+    width: 96%;
+    top: 75%;
+}
+    
+
+
+/*---images-----*/
+
+#lounge1 {
+    display: block;
+    position: absolute;
+    width: 40%;
+    top: .5%;
+    right: 1%;
+    border-radius: 9px;
+}
+
+#lounge2 {
+    position:absolute;
+    left: 35%;
+    top: 3%;
+    width: 30%;
+    height: auto;
+    border-top-right-radius: 90px;
+    border-top-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+    border-bottom-left-radius: 9px;
+}
+    
+#clock {
+    display: block;
+    position: absolute;
+    width: 20%;
+    top: 10.7%;
+    right: 8%;
+    border-radius: 9px;
+}
+
+#hall-pic {
+    position: absolute;
+    width: 45%;
+    left: 2%;
+    top: 14%;
+    border-radius: 9px;
+}
+    
+#hands {
+    display: block;
+    position: absolute;
+    width: 50%;
+    top: 21%;
+    right: 2%;
+    border-radius: 9px;
+}
+
+#line {
+    position: absolute;
+    top: 26%;
+    width: 34%;
+    left: 8%;
+    height: 48px;
+}
+    
+#boys {
+    display: none;
+    }
+
+#children {
+    display: block;
+    width: 97%;
+    position: absolute;
+    top: 30.5%;
+    left: 1%;
+    }
+
+#suite {
+    position: absolute;
+    width: 50%;
+    left: 48%;
+    top: 43%;
+    border-radius: 9px;
+}
+    
+#suite2 {
+    display: block;
+    position: absolute;
+    width: 50%;
+    left: 2%;
+    top: 47%;
+    border-radius: 9px;
+    }
+
+#computer {
+    position: absolute;
+    width: 40%;
+    top: 55.4%;;
+    right: 3%;
+    border-radius: 9px;
+}
+    
+#line2 {
+    position: absolute;
+    width: 35%;
+    top: 61%;
+    left: 25%;
+    height: 48px;
+}
+    
+#maid-svc {
+    display: block;
+    width: 40%;
+    position: absolute;
+    top: 68.2%;
+    left: 3%;
+    border-radius: 9px;
+    
+}
+    
+#pool {
+    display: block;
+    position: absolute;
+    width: 80%;
+    top: 76.9%;
+    left: 10%;
+    border-radius: 9px;
+}
+    
+#room {
+    display: block;
+    position: absolute;
+    width: 80%;
+    top: 87.5%;
+    left: 10%;
+    border-radius: 9px;
+}
+    
+/*-----------Contact-----------------*/
+
+main h4 {
+    text-align: center;
+}
+
+.contact h4 {
+    font-size: 24px;
+}
+
+.contact a {
+    color: black;
+    line-height: 24px;
+}
+
+#contactForm {
+    max-width: 100%;
+}
+    
+.locate p {
+    font-size: 20px;
+}
+    
+/*----------------gallery------------------*/
+    
+nav ul.hidey {
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    justify-content: center;
+    grid-gap: 3px;
+    }
+    
+nav ul li.active1 a {
+    background-image: linear-gradient(#d0c3bb, #a5978e);
+    border-top: 1px solid black;
+    font-weight: bold;
+    color: white;
+    text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;   
+}
+
+.gallery-title h2 {
+    text-align: center;
+    font-size: 30px;
+    padding-top: 19px;
+    margin: auto;
+}
+
+.gallery-title p {
+    text-align: center;
+    max-width: 90%;
+    position: relative;
+    margin: auto;
+    padding-bottom: 18px;
+}
+
+.item {
+    max-height: 510px;
+}
+
+
+.item img {
+    max-height: 510px;
+    width: 100%;
+    object-fit: scale-down;   
+}
+
+.attribution {
+    position: absolute;
+    bottom: 0;
+    left: 1%;
+    text-decoration: underline;
+}
+
+.attribution p {
+    font-size: 22px;
+    text-align: left;
+}
+
+.carousel-caption {
+    bottom: 0px !important;
+    padding-bottom: 1px !important;
+    margin-bottom: 0px !important;
+    left: auto;
+    right: auto;
+}
+
+.carousel-caption p, h3 {
+    padding-bottom: 5px !important;
+    margin: 0px !important;
+}
+
+.carousel-caption p {    
+    font-size: 20px;
+    color: black;
+}
+
+.carousel-caption h3 {
+    font-size: 24px !important;
+    color: black;
+}
+    
+}

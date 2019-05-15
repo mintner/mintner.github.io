@@ -1,0 +1,19 @@
+@media only screen and (min-width:670px ) and (max-width: 1199px) {
+
+
+header, nav, main, section, footer {
+    margin: auto;
+}
+
+.hero {
+    width: 100%
+}
+
+section.forecast {
+    display: none;
+}
+
+div.currentconditions {
+    display: none;
+}
+}

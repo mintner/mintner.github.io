@@ -1,0 +1,291 @@
+@media only screen and (min-width:900px) {
+
+* { margin: 0; box-sizing: border-box; } 
+    
+    main {
+    max-width: 1200px;
+}
+
+/*-------Header--------*/
+
+.header {
+    display: grid;
+    grid-template-columns: 150px auto 140px;
+    grid-gap: 50px;
+    background-color: #8AA39B;
+    max-width: 100%;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+.header h1 {
+    font-size: 3rem;
+    line-height: normal;
+    color: whitesmoke;
+    text-shadow: 2px 2px 8px #40544d;
+}
+    
+.logo img {
+    width: 140px;
+}
+
+.logo {
+    align-self: center;
+    }
+    
+.heading-text {
+    font-family: "Libre Franklin", sans-serif;   
+}
+    
+.subheading {
+    color: whitesmoke;
+    text-shadow: 2px 2px 8px #1c2220;
+    font-style: italic;
+    font-size: 1.3rem;
+    text-align: center;
+}
+    
+.currentconditions {
+    display: grid;
+    grid-template-columns: 1fr;
+    color: whitesmoke;
+    align-self: center;
+    font-weight: bold;
+    background-color: #475552;
+    font-size: .9rem;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px -3px rgba(9, 9, 9, 0.58);
+    margin-left: 10px;
+    padding: 10px 0 10px 0;
+}
+    
+#weathericon {
+    width: 100px;
+    align-self: center;
+}
+    
+.currentconditions p{
+    text-align: center;
+    margin: 0;
+    letter-spacing: .7px;
+    text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+} 
+
+.currentconditions span {
+    font-size: .9rem;
+    text-transform: capitalize;
+    }
+    
+/*---------Navigation---------*/
+        
+nav button {
+    display: none;
+}
+
+nav ul {
+    list-style-type: none;
+    text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 25px;
+    margin: 0;
+    justify-content: center;
+    letter-spacing: .8px;
+}
+
+nav ul li a {
+    color: whitesmoke;
+    text-align: center;
+    padding: 8px;
+    text-decoration: none;
+}
+
+nav ul.hide {
+    display: flex;
+    }
+
+/*-----Main-------*/
+
+main h2 {
+    color: #373232;
+    text-align: center;  
+    }
+    
+.hero {
+
+    object-fit: scale-down;
+    display: block;
+    position: relative;
+    margin: 0;  
+    background-size: contain;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    margin-bottom: 5px;
+    }    
+
+.thetown h2 {
+    position: absolute;
+    font-size: 28px;
+    top: 3%;
+    left: 40%;
+    color: black;
+    background-color: transparent;
+    }
+    
+ .hero-figure {    
+    position: absolute;
+    top: 5%;
+    left: 3%;    
+    color: whitesmoke;
+    background-color:  rgba(92, 111, 104, 0.8);
+    font-size: large;
+    overflow: hidden;
+    padding: 1px 2% 1px 1px;
+    box-shadow: 10px 10px 15px -6px rgba(9, 9, 9, 0.58)
+    }
+    
+.hero-figure ul {
+    line-height: 1.5rem;
+    margin: 2px 0 15px 2px
+    }
+    
+.hero-figure p {
+    margin: 5px;
+    padding: 10px 0 3px 10px;
+    font-weight: bold;
+    letter-spacing: .8px;
+    }
+    
+/*-----Forecast----*/
+
+#forecast {
+    display: grid;
+    padding-bottom: 30px;
+    }
+    
+table {
+    border-collapse: collapse;
+    width: auto;
+    box-shadow: 10px 10px 15px -6px rgba(9, 9, 9, 0.58)
+}
+
+table, th, td {
+    border: 1px solid black;
+    text-align: center;
+    background-color: rgba(135, 177, 177, 0.39);
+    color: black;
+}
+
+th {
+    height: auto;
+    background-color: rgba(135, 177, 177, 0.8);
+}    
+
+td {
+    background-color: rgba(135, 177, 177, 0.2);
+    padding: 1rem;
+}
+    
+#forecast-table {
+    padding-left: 15px;
+}
+
+#forecast h3 {
+    padding-left: 25px;
+    margin: 10px 0 10px 25px;
+    color: #1f1d1d;
+}
+
+/*------article-----*/
+    
+article {
+    background-color: rgba(129,129,129,0.17)
+    }
+    
+#article {
+    display: flex;
+    margin: 0;
+    padding: 5px 10px 10px 10px
+    }
+
+article h3 {
+    font-size: larger;
+    padding: .5rem 0 0 1rem;
+    }
+    
+#clearfix {
+    display: flex;
+    float: right;
+    width: 300px;
+    height: 300px;
+    padding: 0 10px 0 0;
+    margin: 0;
+    } 
+    
+#article p{
+    padding-left: 5px;
+    margin: 2px;  
+    font-size: large;
+    }  
+    
+/*------bottom-----*/
+
+#bottom {
+    background-color: #8aa39b;
+    display: grid;
+    grid-template-columns: 290px 1fr;
+    grid-gap: 40px;
+    padding-bottom: 10px;
+    }
+
+.map {    
+    padding: 15px 0 0 15px;
+    background: none;
+    width: 250px;
+    height: 250px;
+    }
+    
+#contact p {
+    font-size: 20px;
+    line-height: 22px;
+    letter-spacing: .8px
+    }
+
+#contact {
+    align-self: center;
+    text-align: left;
+    padding-left: 20px;
+    }
+    
+/*------footer------*/
+    
+div#attribution {
+    text-align: center;
+    font-size: 1rem;
+    margin: 0;   
+    background-color: #8aa39b;
+    padding-bottom: 5px;
+}  
+    
+.footer {
+    display: grid;
+    text-align: center;
+    background-color: #475552;
+    max-width: 100%;
+    color: whitesmoke;
+    }
+    
+.footer p {
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 10px;
+    }    
+    
+}

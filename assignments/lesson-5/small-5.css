@@ -1,0 +1,51 @@
+@media only screen and (min-width:320px) and (max-width: 670px) {
+   
+    header, nav, main, section, footer {
+        margin: auto;
+
+    }
+    
+    .hero {
+     
+        width: 100%;
+        height: auto;
+        margin: 0;  
+        background-image: url(/images/preston-small.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .hero img {width: 100%}
+    
+    section.forecast {
+        display: none;
+    } 
+  
+    h2 {
+        text-align: center;
+        padding: 1px;
+    }
+
+    article {
+        position: relative;
+        display: block;
+    }
+    div.currentconditions {
+        display: none;
+    }
+
+    .headertext h1 {
+        font-size: 2em;
+    }
+    .headertext.subheading {
+        font-size: .5em;
+    }
+    header {
+        width: 100%;
+    }
+
+
+}

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Temple Inn & Suites">
+    <meta name="author" content="Martha Haag">
+    <title>Temple Inn & Suites</title>
+    <link href="https://fonts.googleapis.com/css?family=Dosis|Noto+Serif+TC|Yellowtail" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+     <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <img class="logo" src="images/logo.jpg" alt="logo for inn">
+            <h1 class="headTitle">We're ready for you...</h1>           
+        </div>
+    </header>
+    
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776;</button>
+            
+            <ul id="primaryNav" class="hide">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="temples.html">Temples</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contactus.html">Contact</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    
+    <main class="narrow">
+        
+        <div class="hero">
+            
+            <img srcset="images/hotel-front-small.jpg 400w,
+                        images/hotel-front-med.jpg 768w,
+                        images/hotel-front.jpg 1000w"   
+                 sizes="(max-width: 499px) 100vw,
+                        (max-width: 768px) 50vw,
+                        (max-width: 1000px) 50vw"
+                src="images/hotel-front.jpg" alt="front of brick building">
+
+            
+            <div class="onHero">
+                <h1>Temple Inn & Suites at Bethesda</h1>
+                <br>
+                    <div class="bookaroom">
+                    <div>
+                        <p>Make a </p>
+                    </div>
+                        
+                    <div>
+                        <button type="button" onclick="parent.location='reservations.html'">Reservation</button>
+                    </div>
+                    </div>
+                
+                    <div class="svs">
+                        <ul>
+                        <li>Visit our <a href="services.html"><span id="svspage">Services</span></a> page to see our full range of amenities</li>
+                        <li>Long term stay accommodations available for couples serving full-time temple missions</li>
+                        <li><a href="reservations.html"><span id="rsrve">Reserve</span></a> our Reception Hall for weddings or reunions</li>  
+                        </ul>
+                                               
+                    </div>
+                    <div class="contact">
+                         <p>4810 Montgomery Ln #500 &bull; Bethesda MD 20814</p>
+                        <p>Telephone: 301-555-2180 &bull; email: contact@templesuites.com</p>
+                    </div>               
+            </div>
+        </div>
+        
+        <div id="curly">
+            <img src="images/curly-cue.png" alt="decorative curly-cue">
+        </div>
+        
+        <div id="blurb">
+            <p><img id="flowers" src="images/hotel-flowers.jpg" alt="flowers in vase">
+            <img id="door" src="images/hotel-open-door.jpg" alt="hand opening door to blurry room"><span class="bold">Temple Inn & Suites</span> is a hotel that caters specifically to members of The Church of Jesus Christ of Latter-Day Saints who wish to attend the nearby temple.  We have four locations in Bethesda Maryland, Salt Lake City Utah, Oakland California, and Gilbert Arizona. All are welcome, but guests must be willing to abide by our terms and policies.  We specialize in meeting the needs of temple patrons, either workers or attendees.  The hotel is closed to regualar hotel guests on Sundays.  Long-term stay accomodations are available only for full-time temple missionaries.</p>
+            
+        
+        
+        </div>
+        
+        <div class="thislocation">
+            <p>This location services patrons of the</p>
+        
+        </div>
+        
+        <div id="dctemple">
+            <h4>Washington D.C. Temple</h4>
+            <p>at</p>
+            <p>9900 Stoneybrook Dr</p>
+            <p>Kensington, MD 20895</p>
+            <p>Ph: 301-588-0650</p>
+            
+        </div>
+
+        
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 5</div>
+                <img class="cimgs" src="images/dc-temple.jpg" alt="Washington D.C temple image with tulips">
+                <div class="text">
+                    <p>Washington D.C Temple</p>
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 5</div>
+                <img class="cimgs"
+                     src="images/dc-temple2.jpg" alt="DC temple at night with fountain">
+                <div class="text">
+                     <p>Washington D.C Temple</p>
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 5</div>
+                <img class="cimgs" src="images/dc-temple3.jpg" alt="View of DC temple, three spires from below">
+                <div class="text">
+                     <p>Washington D.C Temple</p>
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 5</div>
+                <img class="cimgs" src="images/dc-temple4.jpg" alt="DC temple at night with Christmas lights">
+                <div class="text">
+                     <p>Washington D.C Temple</p>
+                </div>
+            </div>
+            
+             <div class="mySlides fade">
+                <div class="numbertext">5 / 5</div>
+                <img class="cimgs" src="images/dc-temple5.jpg" alt="distant view of DC temple and reflection">
+                <div class="text">
+                     <p>Washington D.C Temple</p>          
+                </div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            
+        </div>
+
+        <div class="dc-info">
+            <p>The Washington D.C Temple is currently closed for renovations and will reopen in early 2020.</p>
+            <p>Construction on the Washington D.C. temple began in 1968 and it was dedicated in 1974 by Spencer W. Kimball.</p>
+            <p>The Washington D.C Temple was the 16th temple built, and the first on the east coast of the United States.</p>
+            <p>It was the first to feature six spires since the Salt Lake Temple which inspired the design.</p>
+            <p>Visit our <a href="gallery.html"><span id="templepage">Temples</span></a> gallery for information on temples around the world.</p>
+        </div>
+        
+ </main>
+    
+    <footer id="footer">
+        <p> &copy; Temple Inn & Suites <span id="currentTimeAndDate"></span></p>
+    </footer>
+    
+    <script src="scripts/currenttimeanddate.js"></script>
+    <script src="scripts/hamburgermenu.js"></script>
+    <script src="scripts/carousel.js"></script>
+   <script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
+        
+</body>
+
+</html>

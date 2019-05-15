@@ -1,0 +1,840 @@
+/*---Fish Haven----*/
+* {box-sizing: border-box;}
+
+body {
+        height: 100%;
+        margin: 0 auto !important;
+        float: none !important;
+        font-family: "Libre Franklin", sans-serif;
+    }
+
+main {
+    max-width: 400px;
+    margin: auto;
+    align-items: center;
+
+}
+/*-----small-------*/
+
+.header {
+    display: grid;
+    grid-template-columns: 90px auto;
+    background-color: #8AA39B;
+    padding: 1.5% 2%;
+    max-width: 100%;
+    font-family: 'Libre Franklin', sans-serif;
+    justify-content: center;
+    border-radius: 6px;
+}
+
+.header h1 {
+    font-size: 1.3rem;
+    line-height: normal;
+    color: whitesmoke;
+    text-shadow: 2px 2px 8px #40544d;
+}
+    
+.logo img {
+    width: 70px;
+    border-radius: 10px;
+}
+    
+.heading-text {
+    font-family: "Libre Franklin", sans-serif;
+    justify-self: center;
+    
+}
+    
+.subheading {
+    color: whitesmoke;
+    text-shadow: 2px 2px 8px #1c2220;
+    font-style: italic;
+    font-size: .7rem;  
+    align-self: center;
+}
+    
+.currentconditions {
+    display: none;
+}
+
+/*------Nav--------*/
+
+nav button {
+    margin: 0;
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    color: #2d3122;
+}
+
+nav {
+    border-radius: 4px;
+    background-color: #475552
+    }
+
+nav ul {
+    list-style-type: none;
+    text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 35px;
+    margin: 0;
+    padding: .5rem 0 .5rem 1rem;
+    justify-content: center;
+}
+
+nav ul li a {
+    color: whitesmoke;
+    text-align: center;
+    padding: 4px;
+    text-decoration: none;
+    background-color: #475552;   
+    border: 2px solid #475552;
+}
+
+nav ul li.active a { 
+    color: whitesmoke;
+    background-color: #8aa39b;
+    text-shadow: 2px 2px 8px #1c2220;
+    letter-spacing: 1px;
+    border: 2px solid #475552;
+}
+
+nav ul li a:hover { 
+    color: #475552;
+    background-color: #e4e8e7; 
+    text-shadow: none;
+    border: 2px solid #475552;
+}
+
+nav ul.hide {
+    display: none;
+}
+
+/*-----Main-------*/
+
+main h2 {
+    font-size: 18px;
+    color: #373232;
+    text-align: center;
+    margin: 0;
+    padding: .1rem;
+}
+
+.hero {    
+    margin: 0;  
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%
+}
+
+.hero-figure {    
+    position: absolute;
+    top: 5%;
+    left: 3%;    
+    color: whitesmoke;
+    background-color:  rgba(92, 111, 104, 0.8);
+    font-size: small;
+    overflow: hidden;
+    padding-right: 2%;
+    padding: 1px 2% 1px 1px;
+    box-shadow: 10px 10px 15px -6px rgba(9, 9, 9, 0.58)
+}
+
+.thetown h2 {
+    position: absolute;
+    font-size: 14px;
+    top: 3%;
+    left: 53%;
+    color: black;
+    background-color: transparent;
+    }
+
+.hero-figure ul {
+    margin: 2px 0 15px 2px
+    }
+
+.hero-figure p {
+    margin: 5px;
+    padding: 10px 0 3px 10px;
+    font-weight: bold;
+    }
+
+
+/*-----Forecast----*/
+
+#forecast {
+    display: none;
+}
+
+/*------article-----*/
+
+article {
+   background-color: rgba(129,129,129,0.17);
+}
+
+.article {
+    margin: 0;
+    padding: 5px;
+    }
+
+article h3 {
+    margin: 0;
+    padding: .2rem 0 .1rem 1rem;
+    }
+    
+article img {
+    display: none;       
+    } 
+    
+article p{
+    margin: 0;
+    padding: 0 0 1px 35px;
+    }  
+
+/*------bottom-----*/
+
+#bottom {
+    background-color: #8aa39b;
+    display: grid;
+    text-align: center;
+    padding-bottom: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#contact h4 {
+    margin: 0;
+    padding-top: 8px;
+}
+
+#contact p {
+    font-size: 13px;
+    line-height: 15px;
+    margin: 0;
+}
+
+.fa {
+    padding: 5px;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px;
+}
+
+#fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3b5998;
+    color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#attribution {
+    font-size: .7rem;
+    background-color: #8aa39b;
+    text-align: center;
+    padding-bottom: 7px;
+}
+
+.map {
+    display: none;
+}
+
+/*------footer------*/
+    
+ .footer {
+    font-size: .9rem;
+    display: grid;
+    text-align: center;
+    background-color: #475552;
+    max-width: 100%;
+    color:whitesmoke;
+    }
+
+.footer p {
+    margin: 0;
+    padding: 10px;
+    }
+
+
+/*------------------------Medium-----------------------*/
+
+@media only screen and (min-width:500px) {
+    
+main {
+    max-width: 700px;}
+    
+.header {
+    display: grid;
+    grid-template-columns: 130px auto 130px;
+    grid-gap: 30px;
+    background-color: #8AA39B;
+    max-width: 100%;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+.header h1 {
+    font-size: 2rem;
+    line-height: normal;
+    color: whitesmoke;
+    text-shadow: 2px 2px 8px #40544d;
+}
+    
+.logo img {
+    width: 115px;
+}
+
+.logo {
+    align-self: center;
+    }
+    
+.heading-text {
+    font-family: "Libre Franklin", sans-serif;
+    text-align: center;
+}
+    
+.subheading {
+    color: whitesmoke;
+    text-shadow: 2px 2px 8px #1c2220;
+    font-style: italic;
+    font-size: 1.1rem;
+    text-align: center;
+}
+    
+.currentconditions {
+    display: grid;
+    grid-template-columns: 1fr;
+    color: whitesmoke;
+    align-self: center;
+    font-weight: bold;
+    background-color: #475552;
+    font-size: .7rem;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px -3px rgba(9, 9, 9, 0.58);
+    margin-left: 10px;
+    padding: 10px;
+}
+    
+#weathericon {
+    width: 90px;
+    align-self: center;
+}
+    
+.currentconditions p{
+    text-align: center;
+    margin: 0;
+    letter-spacing: .4px;
+    text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+} 
+
+.currentconditions span {
+    font-size: .8rem;
+    text-transform: capitalize;
+    }
+
+/*------Nav--------*/
+    
+nav button {
+    display: none;
+    }
+
+nav {
+    background-color: transparent;
+    margin: 5px;
+    justify-content: center;
+    }
+    
+nav ul {
+    list-style-type: none;
+    text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    margin: 0;
+}
+    
+nav ul li {
+    padding-left: 2px;    
+    }
+
+nav ul li a {
+    color: whitesmoke;
+    text-align: center;
+    padding: 8px;
+    text-decoration: none;
+    border-radius: 8px;
+}    
+    
+nav ul.hide {
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    justify-content: center;
+    }
+
+/*-----Main-------*/
+
+main h2 {
+    font-size: 22px;
+    color: #373232;
+    text-align: center;  
+    }
+
+.hero {    
+    margin: 0;  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    overflow: hidden;
+}
+    
+.thetown h2 {
+    position: absolute;
+    font-size: 24px;
+    top: 3%;
+    left: 35%;
+    color: black;
+    background-color: transparent;
+    }
+
+.hero-figure {    
+    position: absolute;
+    top: 5%;
+    left: 3%;    
+    color: whitesmoke;
+    background-color:  rgba(92, 111, 104, 0.8);
+    font-size: medium;
+    overflow: hidden;
+    padding: 1px 2% 1px 1px;
+    box-shadow: 10px 10px 15px -6px rgba(9, 9, 9, 0.58)
+    }
+    
+.hero-figure ul {
+    line-height: 1.5rem;
+    margin: 2px 0 15px 2px
+    }
+
+.hero-figure p {
+    margin: 5px;
+    padding: 10px 0 3px 10px;
+    font-weight: bold;
+    }
+
+
+/*-----Forecast----*/
+
+#forecast {
+    display: grid;
+    padding-bottom: 30px;
+    }
+    
+table {
+    border-collapse: collapse;
+    width: auto;
+    box-shadow: 10px 10px 15px -6px rgba(9, 9, 9, 0.58)
+}
+
+table, th, td {
+    border: 1px solid black;
+    text-align: center;
+    background-color: rgba(135, 177, 177, 0.39);
+    color: black;
+}
+
+th {
+    height: auto;
+    background-color: rgba(135, 177, 177, 0.8);
+}    
+
+td {
+    background-color: rgba(135, 177, 177, 0.2);
+    padding: 1rem;
+}
+    
+#forecast-table {
+    padding-left: 15px;
+}
+
+#forecast h3 {
+    padding-left: 25px;
+    margin: 10px 0 10px 25px;
+    color: #1f1d1d;
+}
+    
+/*------article-----*/
+
+article {
+    background-color: rgba(129,129,129,0.17)
+    }
+    
+.article {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    margin: 0;
+    padding: 5px 10px 10px 10px
+    }
+
+article h3 {
+    padding: .5rem 0 0 1rem;
+    }
+    
+.article img {
+    display: grid;
+    width: 300px;
+    height: auto;
+    padding: 0 10px 0 0;
+    margin: 0;
+    } 
+    
+article p{
+    padding-left: 20px;
+    margin: 2px;        
+    }  
+
+/*------bottom-----*/
+
+#bottom {
+    background-color: #8aa39b;
+    display: grid;
+    grid-template-columns: 290px 1fr;
+    grid-gap: 30px;
+    padding-bottom: 10px;
+}
+
+.map {
+    display: grid;
+    padding: 15px 0 0 15px;
+    background:none;
+    width: 250px;
+    height: 250px;
+    border: none;
+    }
+    
+#support {
+    font-size: 15px;
+    }
+
+#contact p {
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: .5px
+}
+
+#contact {
+    align-self: center;
+    text-align: left;
+    }
+    
+/*------footer------*/
+div#attribution {
+    text-align: center;
+    font-size: .9rem;
+    margin: 0;   
+    background-color: #8aa39b;
+    padding-bottom: 5px;
+}    
+ .footer {
+        display: grid;
+        text-align: center;
+        background-color: #475552;
+        max-width: 100%;
+        color:whitesmoke;
+    }
+.footer p {
+    margin: 0;
+    padding: 10px;
+    }    
+    
+}
+
+/*------------------------Large------------------------*/
+
+@media only screen and (min-width:900px) {
+    
+main {
+    max-width: 1200px;}
+
+/*-----Header-----*/
+    
+.header {
+    display: grid;
+    grid-template-columns: 150px auto 140px;
+    grid-gap: 50px;
+    background-color: #8AA39B;
+    max-width: 100%;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+.header h1 {
+    font-size: 3rem;
+    line-height: normal;
+    color: whitesmoke;
+    text-shadow: 2px 2px 8px #40544d;
+}
+    
+.logo img {
+    width: 140px;
+}
+
+.logo {
+    align-self: center;
+    }
+    
+.heading-text {
+    font-family: "Libre Franklin", sans-serif;   
+}
+    
+.subheading {
+    color: whitesmoke;
+    text-shadow: 2px 2px 8px #1c2220;
+    font-style: italic;
+    font-size: 1.3rem;
+    text-align: center;
+}
+    
+.currentconditions {
+    display: grid;
+    grid-template-columns: 1fr;
+    color: whitesmoke;
+    align-self: center;
+    font-weight: bold;
+    background-color: #475552;
+    font-size: .9rem;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px -3px rgba(9, 9, 9, 0.58);
+    margin-left: 10px;
+    padding: 4px 0 4px 0;
+}
+    
+#weathericon {
+    width: 100px;
+    align-content: center;
+    padding: 0;
+    margin: 0;
+}
+    
+.currentconditions p{
+    text-align: center;
+    margin: 4px 2px 0 2px;
+    letter-spacing: .7px;
+    text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+} 
+
+.currentconditions span {
+    font-size: .9rem;
+    text-transform: capitalize;
+    margin-bottom: 2px;
+    }
+
+/*------Nav--------*/
+nav button {
+    display: none;
+}
+
+nav ul.hide {
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    grid-gap: .5rem;
+}
+
+/*-----Main-------*/
+
+main h2 {
+    color: #373232;
+    text-align: center;  
+}
+
+.hero {    
+    margin: 0; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+    
+.thetown h2 {
+    position: absolute;
+    font-size: 28px;
+    top: 3%;
+    left: 45%;
+    color: black;
+    background-color: transparent;
+    }
+
+.hero-figure {    
+    position: absolute;
+    top: 3%;
+    left: 3%;    
+    color: #edefed;
+    background-color:  rgba(92, 111, 104, 0.8);
+    font-size: large;
+    overflow: hidden;
+    padding-right: 2%;
+    padding: 1px 2% 1px 1px;
+    box-shadow: 10px 10px 15px -6px rgba(9, 9, 9, 0.58)
+    }
+    
+.hero-figure ul {
+    line-height: 1.5rem;
+    margin: 2px 0 15px 2px
+    }
+
+.hero-figure p {
+    margin: 5px;
+    padding: 10px 0 3px 10px;
+    font-weight: bold;
+    letter-spacing: .8px;
+    }
+
+
+/*-----Forecast----*/
+
+table {
+    border-collapse: collapse;
+    width: auto;
+    box-shadow: 10px 10px 15px -6px rgba(9, 9, 9, 0.58)
+}
+
+table, th, td {
+    border: 1px solid black;
+    text-align: center;
+    background-color: rgba(135, 177, 177, 0.39);
+    color: black;
+}
+
+th {
+    height: auto;
+    background-color: rgba(135, 177, 177, 0.8);
+}    
+
+td {
+    background-color: rgba(135, 177, 177, 0.2);
+    padding: 1rem;
+}
+.table {
+    padding-left: 15px;
+}
+
+.forecast h3 {
+    padding-left: 25px;
+    color: #373232;
+}
+
+/*------article-----*/
+
+article {
+    background-color: rgba(129,129,129,0.17)
+    }
+    
+.article {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    margin: 0;
+    padding: 5px 10px 10px 10px
+    }
+
+article h3 {
+    padding: .5rem 0 0 1rem;
+    }
+    
+.article img {
+    display: grid;
+    width: 300px;
+    height: auto;
+    padding: 0 10px 0 0;
+    margin: 0;
+    } 
+    
+article p{
+    padding-left: 20px;
+    margin: 2px;        
+    }  
+
+/*------bottom-----*/
+
+#bottom {
+    background-color: #8aa39b;
+    display: grid;
+    grid-template-columns: 370px 1fr;
+    grid-gap: 30px;
+}
+
+.map {
+    display: grid;
+    padding: 15px 0 0 15px;
+    background: none;
+    height: 250px;
+    width: 250px;
+    border: none;
+    }
+
+#support {
+    font-size: 16px;
+    }
+
+#contact p {
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: .8px
+}
+
+#contact {
+    align-self: center;
+    text-align: left;
+    }
+    
+/*------footer------*/
+    
+div#attribution {
+    text-align: center;
+    font-size: 1rem;
+    margin: 0;   
+    background-color: #8aa39b;
+    padding-bottom: 5px;
+}    
+.footer {
+        display: grid;
+        text-align: center;
+        background-color: #475552;
+        max-width: 100%;
+        color: whitesmoke;
+    }
+.footer p {
+    margin: 0;
+    padding: 10px;
+    font-size: 1.2rem;
+    }
+}

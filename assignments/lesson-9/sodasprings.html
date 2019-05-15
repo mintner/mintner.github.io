@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">  
+        <title>Preston Weather</title>  
+        <meta name="author" content="Martha Haag">
+        <meta name="description" content="Preston Weather Source">
+        <link href="https://fonts.googleapis.com/css?family=Libre+Franklin" rel="stylesheet">
+        <link href="styles/normalize.css" rel="stylesheet">
+        <link href="styles/small.css" rel="stylesheet">
+        <link href="styles/medium.css" rel="stylesheet">
+        <link href="styles/large.css" rel="stylesheet">
+
+    </head>
+
+    <body>
+        <header>
+
+            <div class="header">
+            <div class="logo">
+            <img src="images/logo.png" alt="Betatown Logo">
+            </div>
+
+            <div class="heading-text">
+                    <h1>Preston Weather Source</h1>
+                
+                <div class="subheading">We have your weather forecast when you need it!</div>
+            </div>
+            <div class="currentconditions">
+                    <p>Current Weather</p>    
+                    <img src="#" id="weathericon" alt="current weather icon">
+                <p> <span id="weather-desc"></span></p></div>
+            </div>
+        
+        </header>
+
+        <nav class="clearfix">            
+                <button onclick="toggleMenu()">&#9776;</button>
+
+            <ul id="primaryNav" class="hide">
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="preston.html">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+
+        <main>
+                <h2>The Town of Preston</h2>
+            <div class="hero">
+                    <img srcset="images/preston-small.jpg 320w,
+                    images/preston-med.jpg 480w,
+                    images/preston-large.jpg 800w"
+                   sizes="(max-width: 320px) 280px,
+                   (max-width: 480px) 440px,
+                   800px"
+                   src="images/preston-large.jpg" alt="Preston Main">
+                
+              
+                <div class="hero-figure">
+                    <p>Today's Weather</p>
+                    <ul> 
+                        <li>Currently: <span id="currenttemp"></span>&deg;F</li>
+                        <li>Precipitation: <span id="precip"></span>n/a</li>
+                        <li>Humidity: <span id="humidity"></span>%</li>
+                        <li>Wind Speed: <span id="currentspeed"></span>mph</li>
+                        <li>Wind Chill: <span id="windchill"></span>&deg;F</li>  
+                    </ul>
+                </div>
+            </div>
+               
+            <section class="forecast">
+                <h3>High Temperature Forecast</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            
+                            <th>Sun</th>
+                            <th>Mon</th>
+                            <th>Tues</th>
+                            <th>Wed</th>
+                            <th>Thurs</th>
+                            <th>Fri</th>
+                            <th>Sat</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            
+                            <td><span id="sun"></span></td>
+                            <td><span id="mon"></span></td>
+                            <td><span id="tues"></span></td>
+                            <td><span id="wed"></span></td>
+                            <td><span id="thurs"></span></td>
+                            <td><span id="fri"></span></td>
+                            <td><span id="sat"></span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <br>
+        <article>
+            <img class="textwrap" src="images/frost-large.png" alt="Cold window">
+            <h3>How to Reduce Your Energy Costs This Winter</h3>
+            <p>Praesent ut vehicula neque, et feugiat quam. Phasellus tristique purus sodales 
+                nisl congue pharetra. Vivamus malesuada dapibus nulla, sed dictum risus. 
+                Phasellus euismod nulla tincidunt ultrices suscipit. Maecenas in commodo magna. 
+                Phasellus dictum imperdiet ligula, a faucibus tortor tristique sit amet. Aenean
+                 mollis purus nec mi cursus, ultrices condimentum diam accumsan. Maecenas et luctus 
+                 ligula, eget blandit orci. Donec consectetur enim felis, sit amet auctor nibh pretium 
+                 facilisis. Vestibulum facilisis consequat leo, nec lobortis turpis sodales quis. Duis 
+                 iaculis vehicula maximus. In hac habitasse platea dictumst. Sed euismod felis. Praesent ut vehicula neque, et feugiat quam. Phasellus tristique purus sodales 
+                nisl congue pharetra. Vivamus malesuada dapibus nulla, sed dictum risus. 
+                Phasellus euismod nulla tincidunt ultrices suscipit. Maecenas in commodo magna. 
+                Phasellus dictum imperdiet ligula, a faucibus tortor tristique sit amet.  ligula, eget blandit orci. Donec consectetur enim felis, sit amet auctor nibh pretium 
+                facilisis. Vestibulum facilisis consequat leo, nec lobortis turpis sodales quis. Duis 
+                iaculis vehicula maximus. In hac habitasse platea dictumst. Sed euismod felis. Praesent ut vehicula neque, et feugiat quam. Phasellus tristique purus sodales 
+               nisl congue pharetra. Vivamus malesuada dapibus nulla, sed dictum risus. 
+               Phasellus euismod nulla tincidunt ultrices suscipit. Maecenas in commodo magna. 
+               Phasellus dictum imperdiet ligula, a faucibus tortor tristique sit amet.
+            </p>
+        </article>
+            
+            <div class="contact">
+                <h4>BetaTown Weather</h4>
+                <p>124 Main Street</p>
+                <p>Preston, ID 21655</p>
+                <p>800.555.7777</p>
+                <p>betatown@domain.com</p>
+            </div>
+
+        </main>
+
+       
+        <footer>
+            <section class="footer">
+                <p>&copy;2018  |  BetaTown Weather  |  <a href="#">
+                    Terms of Use</a>  |  <span id="currentdate"></span></p>
+                <div id='attribution'>Up to date weather information provided by: openweathermap.org</div>
+            </section>
+        </footer>
+        <script src="scripts/currentdate.js"></script>
+        <script src="scripts/togglemenu.js"></script>
+        <script src="scripts/weather.js"></script>
+
+    </body>
+</html>

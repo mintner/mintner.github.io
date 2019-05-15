@@ -1,0 +1,20 @@
+{
+    "Templehours": [
+        {
+            "name": "Washington D.C. Temple",
+            "closures": "Temple is closed due to renovations and will reopen in early 2020"
+    },
+        {
+            "title": "Oakland California Temple",
+            "closures": "Temple is closed due to renovations and will reopen in 2019"
+    },
+         {
+            "title": "Salt Lake Temple",
+            "closures": ["Tuesday, December 25, 2018", "Saturday, December 29, 2018 (Limited Hours)", "Tuesday, January 1, 2019 - Monday, January 28, 2019", "Saturday, April 6, 2019", "Thursday, July 2, 2019 - Monday, July 15, 2019", "Wednesday, July 24, 2019", "Saturday, October 5, 2019", "Thursday, November 28, 2019 - Friday, November 29, 2019", "Tuesday, December 24, 2019 - Wednesday, December 25, 2019", "Tuesday, December 31, 2019"]
+    },
+         {
+            "title": "Gilbert Arizona Temple",
+            "closures": ["Tuesday, December 25, 2018", "Wednesday, December 26, 2018", "Saturday, April 6, 2019", "Thursday, July 4, 2019", "Monday, September 30, 2019 - Monday, October 14, 2019", "Wednesday, November 27, 2019 - Thursday, November 28, 2019", "Tuesday, December 24, 2019 - Wednesday, December 25, 2019", "Tuesday, December 31, 2019"]
+    }
+  ]
+}

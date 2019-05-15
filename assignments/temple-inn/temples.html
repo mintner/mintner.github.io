@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Temple Inn & Suites - Temples">
+    <meta name="author" content="Martha Haag">
+    <title>Temple Inn & Suites</title>
+    <link href="https://fonts.googleapis.com/css?family=Dosis|Noto+Serif+TC" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <img class="logo" src="images/logo.jpg" alt="temple inn logo">
+            <h1 class="headTitle">The Temples...</h1>
+        </div>
+
+
+    </header>
+    
+    
+        <nav class="navbar">
+             <button onclick="toggleMenu()">&#9776;</button>
+            
+            <ul id="primaryNav" class="hide">
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="temples.html">Temples</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contactus.html">Contact</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    <main class="narrow">
+        
+        <h1 class="sched">Temple ordinance schedules, closures, and weather for our four locations</h1>
+        
+       <div id="accordion">
+            <h3>Washington D.C. Temple</h3>
+            <div>
+                <div class="templeGrid">
+                <div>
+                    <div class="temple-pic">
+                    <img srcset="images/dc-temple-small.jpg 400w,
+                                 images/dc-temple-med.jpg 768w,
+                                 images/dc-temple.jpg 1000w"
+                         sizes="(max-width: 499px) 375px,
+                                (max-width: 768px) 768px"                         
+                         src="images/dc-temple.jpg" alt="Front of DC temple with tulips in foreground">
+                    <div class="text">
+                        <p>Washington D.C. Temple - Current Weather is <span id="currenttempw"></span></p>
+                    </div>
+                    </div>
+                        <p>9900 Stoneybrook Dr &bull; Kensington MD 20895</p>
+                        <p>Telephone: 301-588-0650 &bull; <a href="mailto:vcwashington@lds.org" target="_top">Email: vcwashington@lds.org</a></p>
+                        <h4>Temple closures</h4>
+                        <p>&bull; <span id="wash"></span></p> 
+                    </div>
+                </div>
+            </div>
+
+            <h3>Oakland Temple</h3>
+            <div>
+                <div class="templeGrid">
+                    <div class="temple-pic">
+                    <img srcset="images/oakland-temple-small.jpg 400w,
+                                 images/oakland-temple-med.jpg 768w,
+                                 images/oakland-temple.jpg 1000w"
+                         sizes="(max-width: 499px) 375px,
+                                (max-width: 768px) 768px"                         
+                         src="images/oakland-temple.jpg" alt="Front of Oakland temple accross front lawn">
+                    <div class="text">
+                        <p>Oakland Temple - Current Weather is <span id="currenttempo"></span></p>
+                    </div>
+                    </div>    
+                        
+                        <p>4770 Lincoln Ave &bull; Oakland CA 94602</p>
+                        <p>Telephone: 510-531-3200 &bull; <a href="mailto:vcoakland@lds.org" target="_top">Email: vcoakland@ldscurch.org</a></p>
+                        <h4>Temple closures</h4>
+                        <p>&bull; <span id="oak"></span></p>
+                </div>
+            </div>
+
+            <h3>Salt Lake Temple</h3>
+            <div>
+                <div class="templeGrid">
+                    <div class="temple-pic">
+                    <img srcset="images/salt-lake-temple-small.jpg 400w,
+                                 images/salt-lake-temple-med.jpg 768w"
+                         sizes="(max-width: 499px) 375px,
+                                (max-width: 768px) 768px"              
+                         src="images/salt-lake-temple.jpg" alt="Front of Salt Lake temple reflecting in pool of water">
+                    <div class="text">
+                        <p>Salt Lake Temple - Current Weather is <span id="currenttempsl"></span></p>
+                    </div>
+                    </div>                    
+                        <p>50 West North Temple St &bull; Salt Lake City UT 84150</p>
+                        <p>Telephone: 801-240-2640 &bull; <a href="mailto:vcsaltlake@lds.org" target="_top">Email: vcsaltlake@ldscurch.org</a></p>
+                    
+                     <div id="sltabs">
+                        <ul>
+                            <li><a href="#tabs-1">Baptism Schedule</a></li>
+                            <li><a href="#tabs-2">Endowment Schedule</a></li>
+                           
+                         </ul>
+                         <div id="tabs-1">
+                             
+                             <h4>Tuesday - Thursday</h4>
+                             <p>5:00am - 8:00pm</p>
+                             <p>Contact the Temple for Family Priority baptism appointments</p>
+                         </div>
+                         
+                         <div id="tabs-2">
+                            <h4>Tuesday - Thursday</h4>
+                             <p>First session at 6:00am</p>
+                             <p>Sessions begin every hour, the last begins at 7:00pm</p>                         
+                         </div>
+                         
+                        <h4>Temple closures</h4>
+                        <p>&#8226; <span id="salt0"></span></p>
+                        <p>&#8226; <span id="salt1"></span></p>
+                        <p>&#8226; <span id="salt2"></span></p>
+                        <p>&#8226; <span id="salt3"></span></p>
+                        <p>&#8226; <span id="salt4"></span></p>
+                        <p>&#8226; <span id="salt5"></span></p>
+                        <p>&#8226; <span id="salt6"></span></p>
+                        <p>&#8226; <span id="salt7"></span></p>
+                        <p>&#8226; <span id="salt8"></span></p>
+                        <p>&#8226; <span id="salt9"></span></p>
+                    </div>
+                </div>
+            </div>
+
+            <h3>Gilbert Arizona Temple</h3>
+            <div>
+                <div class="templeGrid">
+                    <div class="temple-pic">
+                    <img srcset="images/gilbert-arizona-temple-small.jpg 400w,
+                                 images/gilbert-arizona-temple-med.jpg 768w,
+                                 images/gilbert-arizona-temple.jpg 1000w"
+                         sizes="(max-width: 499px) 375px,
+                                (max-width: 768px) 768px"                 
+                         src="images/gilbert-arizona-temple.jpg" alt="front of Gilbert temple at dusk">
+                    <div class="text">
+                        <p>Gilbert Arizona Temple - Current Weather is <span id="currenttempga"></span></p>
+                    </div>
+                    </div>
+                        <p>3301 S Greenfield Rd &bull; Gilbert AZ 85297</p>
+                        <p>Telephone: 480-822-5000 &bull; <a href="mailto:vcgilbert@lds.org" target="_top">Email: vcgilbert@ldscurch.org</a></p>
+                        
+                    
+                  <div id="gtabs">
+                        <ul>
+                            <li><a href="#tabs-1">Baptism Schedule</a></li>
+                            <li><a href="#tabs-2">Endowment Schedule</a></li>
+                           
+                         </ul>
+                         <div id="tabs-1">
+                             
+                             <h4>Tuesday - Thursday</h4>
+                             <p>5:00am - 8:00pm</p>
+                             <p>Contact the Temple for Family Priority baptism appointments</p>
+                         </div>
+                         
+                         <div id="tabs-2">
+                            <h4>Tuesday - Thursday</h4>
+                             <p>First session at 6:00am</p>
+                             <p>Sessions begin every hour, the last begins at 7:00pm</p>                         
+                    </div>   
+                        <h4>Temple closures</h4>
+                        <p>&#8226;<span id="gil0"></span></p>
+                        <p>&#8226;<span id="gil1"></span></p>
+                        <p>&#8226;<span id="gil2"></span></p>
+                        <p>&#8226;<span id="gil3"></span></p>
+                        <p>&#8226;<span id="gil4"></span></p>
+                        <p>&#8226;<span id="gil5"></span></p>
+                        <p>&#8226;<span id="gil6"></span></p>
+                        <p>&#8226;<span id="gil7"></span></p>
+                </div>
+            </div>
+        </div>
+
+        </div>
+        
+</main>
+    
+    <footer id="footer">
+        <p> &copy; Temple Inn & Suites <span id="currentTimeAndDate"></span></p>
+    </footer>
+    
+    <script src="scripts/currenttimeanddate.js"></script>
+    <script src="scripts/hamburgermenu.js"></script>
+    <script src="scripts/accord.js"></script>
+    <script src="scripts/closures.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/jquery-ui.js"></script>
+
+</body>
+
+</html>

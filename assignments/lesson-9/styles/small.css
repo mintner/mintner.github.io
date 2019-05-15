@@ -1,0 +1,427 @@
+
+* {box-sizing: border-box;}
+
+    body {
+        font-size: 11px;
+        font-family: "Libre Franklin", sans-serif;
+    }
+ 
+/*---------Header----------*/
+
+    .header {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        background-color: #8AA39B;
+        padding: 1.5% 2%;
+        max-width: 100%;
+        font-family: 'Libre Franklin', sans-serif;
+    }
+
+    .header h1 {
+        font-size: 1.5rem;
+        line-height: normal;
+        color: whitesmoke;
+        text-shadow: 2px 2px 8px #40544d;
+    }
+
+    .header img {
+        width: 70px;
+    }
+
+    .heading-text {
+        font-family: "Libre Franklin", sans-serif;
+        display: flex;
+        flex-flow: column wrap;
+        align-content: center;
+    }
+    
+    .subheading {
+        color: whitesmoke;
+        align-self: center;
+        text-shadow: 2px 2px 8px #1c2220;
+        font-style: italic;
+        font-size: .7rem;
+    }
+
+    .currentconditions {
+        display: none;
+    }
+
+/*---------Navigation----------*/
+
+nav button {
+    display: flex;
+    margin: 0;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #2d3122;
+}
+
+nav {
+    max-width: 100%;
+    margin: 0;
+    background-color: #676f54;
+}
+
+nav ul {
+    list-style-type: none;
+    text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 27px;
+    margin: 0;
+    padding: .4rem;
+    background-color: #475552;
+}
+
+nav ul li a {
+    color: whitesmoke;
+    text-align: center;
+    padding: .5rem 1rem .5rem 1rem;
+    text-decoration: none;
+}
+
+nav ul li.active a { 
+    color: whitesmoke;
+    background-color: #8aa39b;
+    text-shadow: 2px 2px 8px #1c2220;
+    letter-spacing: 1px
+}
+
+nav ul li a:hover { 
+    color: #9fbbb5; 
+    background-color: rgba(92,111,104,0.4); 
+}
+
+nav ul.hide {
+    display: none;
+}
+
+/*----------Body--------*/
+
+body {
+    font-size: 11px;
+    font-family: "Libre Franklin", sans-serif;
+}
+
+    body h2 {
+        text-align: center;
+        margin: 0;
+    }
+
+    .hero {
+        position: relative;
+        width: 100%;
+        height: auto;
+        margin: 0;  
+        background-size: contain;
+        position: relative;
+    }
+
+    .hero img{
+        width: 100%;
+    }
+
+    .hero-figure {    
+        position: absolute;
+        top: 3%;
+        left: 3%;
+        display: flex;
+        flex-direction: column;
+        color: whitesmoke;
+        background-color:  rgba(92, 111, 104, 0.8);
+        font-size: small;
+        overflow: hidden;
+        padding-right: 2%;
+        box-shadow: 10px 10px 15px -6px rgba(9, 9, 9, 0.58)
+    }
+
+    .hero-figure ul {
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+    }
+
+    .hero-figure p {
+        margin:.2rem 0 0 .2rem;
+            text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+    }
+
+    section.forecast {
+        display: none;
+    }
+
+/*-----------Main-----------*/
+
+main h1 {
+    text-align: center;
+}
+    
+/*---------Thanks-----------*/
+    div.thanks h1 {
+    text-shadow: none !important;
+    }
+
+    main div.thanks {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        font-size: 22px;
+    }
+
+    picture.storm {
+        display: flex;
+        justify-content: center;
+        padding-top: 2%;
+        padding-bottom: 1%;
+    }
+
+/*----------end Thanks-------*/
+
+    main h2 {
+        color: #373232;
+        padding: .8rem;
+        text-align: center;
+        text-shadow: 2px 2px rgba(188, 184, 184, 0.58)   
+    }
+
+article {
+    background-color: rgba(129,129,129,0.17);
+}
+
+    article h3 {    
+        padding: .5rem 0 0 1rem;
+    
+    }
+
+article img {
+    display: none;
+}
+
+/*-----------bottom--------*/
+
+
+.contact {
+    font-size: 12px;
+        background-color: #8aa39b;
+        padding: 15px 0 10px 0;
+        width: 100%;
+        height: auto;
+        display: grid;
+        justify-content: center;
+        line-height: 14px;
+    }
+
+    /*--------footer-------*/
+
+    .footer {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        background-color: #475552;
+        max-width: 100%;
+        color:whitesmoke;
+    }
+div#attribution {
+    font-size: .7rem;
+}
+
+    .clearfix:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+.textwrap {
+    float: right;
+    margin: 10px;
+}
+    
+/*-----------Storm Form----------*/
+
+
+
+form#stormform {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+legend {
+    font-size: 18px;
+    background-color: #8aa39b;
+    border-color: #676f54;
+    border-radius: 8px;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: whitesmoke;
+    box-shadow: 5px 5px 4px #777;
+}
+
+fieldset {
+    background-color: rgba(129, 129, 129, 0.17);
+    border-radius: 10px;
+    box-shadow: 5px 5px 4px #777777;
+    margin: 1.5em 0;
+    border-color: #676f54;
+}
+
+form span#ratingvalue {
+    padding-left: 53px;
+    font-weight: bold;
+    padding-bottom: 2rem;
+}
+
+form label.reg, label.reg input {
+    text-align: left;
+    display: block;
+    width: 100%;
+    max-width: 20rem;
+    font-size: 16px;
+    padding-bottom: .3rem;
+    padding-top: .5rem;
+}
+
+form label.date {
+   text-align: left;
+    display: block;
+    width: 100%;
+    max-width: 20rem;
+    font-size: 16px;
+    padding-bottom: .3rem;
+    padding-top: .3rem; 
+}
+
+form label.storm {
+   text-align: left;
+    display: block;
+    width: 100%;
+    max-width: 20rem;
+    font-size: 16px;
+    padding-bottom: .3rem;
+    padding-top: .3rem;
+} 
+
+form label.danger {
+    text-align: left;
+    display: block;
+    width: 100%;
+    max-width: 20rem;
+    padding-top: .3rem;
+    font-size: 16px;
+    padding-bottom: .5rem;
+}
+
+
+form select {
+    -webkit-appearance: none;
+    display: block;
+    border: solid 1px #999;
+    padding: .5rem;
+    font-size: 16px;
+    margin-bottom: .4rem;
+}
+
+label.reg input {
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    padding: .5em;
+}
+
+form label.rdo {
+    display: block;  
+    font-weight: bold;
+}
+
+label.rdo span {
+    padding-bottom: .1rem
+}
+
+form input.range {
+    -webkit-appearance: none;
+    padding: .2rem;
+}
+
+input.button {    
+    -webkit-appearance: none;
+    background-image: linear-gradient(#dbdbdb, #8aa39b);
+    border-color: #676f54;
+    color: #242121;
+    font-size: 20px;
+    font-weight: bolder;
+    border-radius: 20px;
+    height: 50px;
+    margin-bottom: 20px;
+    padding: 2%;
+    box-shadow: 4px 4px 7px #777777;
+}
+
+input.button:hover {
+    background-image: linear-gradient(#8aa39b, #dbdbdb);
+}
+
+/*-----------index----------*/
+section.towns {
+    display: grid;
+    margin: 20px;
+    grid-template-columns: repeat(1, 100%);
+}
+
+.preston {
+    border: solid 3px #bababa;
+    font-family: "Libre Franklin", sans-serif;
+    text-align: center;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    box-shadow: 3px 3px 6px rgba(0,0,0,0.4);
+}
+.preston img {
+    width: 95%;
+}
+
+.soda {
+    border: solid 3px #bababa;
+    font-family: "Libre Franklin", sans-serif;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    box-shadow: 3px 3px 6px rgba(0,0,0,0.4);
+}
+
+.soda img {
+    width: 95%;
+}
+
+#sodamotto span {
+    font-size: .7rem;
+}
+
+p#sodamotto {
+    font-size: .7rem;
+}
+
+.fish {
+    border: solid 3px #bababa;
+    font-family: "Libre Franklin", sans-serif;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    box-shadow: 3px 3px 6px rgba(0,0,0,0.4);
+}
+
+.fish img{
+    width: 95%;
+}

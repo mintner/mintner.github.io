@@ -1,0 +1,292 @@
+
+* {box-sizing: border-box;}
+
+    body {
+        font-size: 11px;
+        font-family: "Libre Franklin", sans-serif;
+    }
+   
+    .header {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        background-color: #8AA39B;
+        padding: 1.5% 2%;
+        max-width: 100%;
+        font-family: 'Libre Franklin', sans-serif;
+    }
+
+    .header h1 {
+        font-size: 1.5rem;
+        line-height: normal;
+        color: whitesmoke;
+        text-shadow: 2px 2px 8px #40544d;
+    }
+
+    .header img {
+        width: 70px;
+    }
+
+    .heading-text {
+        font-family: "Libre Franklin", sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+    
+    .subheading {
+        color: whitesmoke;
+        align-self: center;
+        text-shadow: 2px 2px 8px #1c2220;
+        font-style: italic;
+        font-size: .7rem;
+    }
+
+    .currentconditions {
+        display: none;
+    }
+
+/*---------Navigation----------*/
+
+nav button {
+    display: flex;
+    margin: 0;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #2d3122;
+}
+
+nav {
+    max-width: 100%;
+    margin: 0;
+    background-color: #676f54;
+}
+
+nav ul {
+    list-style-type: none;
+    text-shadow: 1px 1px black;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 27px;
+    margin: 0;
+    padding: .4rem;
+    background-color: #676f54;
+}
+
+nav ul li a {
+    color: whitesmoke;
+    text-align: center;
+    padding: .4rem 1rem .4rem 1rem;
+    text-decoration: none;
+}
+
+nav ul li.active a { 
+    color: whitesmoke;
+    background-color: #475552; 
+}
+
+nav ul li a:hover { 
+    color: #9fbbb5; 
+    background-color: rgba(92,111,104,0.4); 
+}
+
+nav ul.hide {
+    display: none;
+}
+
+/*----------Body-------*/
+
+body {
+    font-size: 11px;
+    font-family: "Libre Franklin", sans-serif;
+}
+
+    body h2 {
+        text-align: center;
+        margin: 0;
+    }
+
+    .hero {
+        width: 100%;
+        height: auto;
+        margin: 0;  
+        padding: 0 0 0 2%;
+        background-size: contain;
+        position: relative;
+        box-shadow: 10px 10px 15px -6px rgba(9, 9, 9, 0.58)
+    }
+
+    .hero img{
+        width: 100%;
+    }
+
+    .hero-figure {    
+        position: absolute;
+        top: 3%;
+        left: 3%;
+        display: flex;
+        flex-direction:column;
+        color: whitesmoke;
+        background-color:  rgba(92, 111, 104, 0.8);
+        font-size: small;
+        overflow: hidden;
+        padding-right: 2%;
+        box-shadow: 10px 10px 15px -6px rgba(9, 9, 9, 0.58)
+    }
+
+    .hero-figure ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero-figure p {
+        margin:.2rem 0 0 .2rem
+    }
+
+    section.forecast {
+        display: none;
+    } 
+  
+    article {
+        position: relative;
+        display: block;
+    }
+
+    main p {
+        padding: .2rem 1rem .2rem 1rem;
+    } 
+
+    main h2 {
+        color: #373232;
+        padding: .8rem;
+        text-align: center;
+        text-shadow: 2px 2px rgba(188, 184, 184, 0.58)   
+    }
+
+    article h3 {
+    
+        padding-left: 1rem;
+    
+    }
+    /*--------footer-------*/
+    .footer {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        background-color: #8AA39B;
+        max-width: 100%;
+        margin-top: 1em;
+        padding: .7%;
+        color:whitesmoke;
+    
+    }
+
+    .clearfix:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    
+  /*-----------Gallery CSS---------*/
+
+  .title {
+    font-family: 'Libre-Franklin', serif;
+    font-size: 35px;
+    text-align: center;
+    color: #564d4d;
+}
+
+div.gallery {
+    margin: 1%;
+	padding: 2%;
+  	grid-template-columns: repeat(1, 100%);
+    display: grid;
+}
+
+div.gallery figure {
+    margin: 1rem 0; 
+    }
+
+div.gallery figure img {
+    width: 100%;
+    border: none;
+}
+
+div.gallery figure figcaption {
+    text-align: center;
+    font-size: .9rem;
+    font-weight: bold;
+}
+
+div.topGrid{
+    padding: 0 2%;
+    display: grid;
+    margin-right: .5rem;
+    background-color: lightblue;
+}
+
+div.topGrid img{
+    width: 100%;
+}
+
+div.grids{
+    padding: 0 2%;
+    display: grid;
+    margin-right: .5rem;
+    background-color: darkgrey;
+}
+
+div.grids img{
+    width: 100%;
+}
+
+/*-------------Storm Form--------------*/
+
+form#stormform {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+legend {
+    font-size: 20px;
+    background-color: #2e75b6;
+    border-radius: 25px;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: white;
+}
+
+fieldset {
+    background-color: #9C9C9C;
+    border-radius: 10px;
+    box-shadow: 5px 5px 4px #777777;
+    margin: 1.5em 0;
+}
+
+label {
+    text-align: left;
+    display: block;
+    margin: .5em;
+}
+
+label span {
+    display: block;
+    padding-top: .5em;
+    color: #ffffff;
+}
+
+input.button {
+    
+    -webkit-appearance: none;
+    background-color: #2e75b6;
+    color: #ffffff;
+    font-size: 20px;
+    border-radius: 60px;
+    width: 150px;
+    height: 50px;
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 4px #777777;
+}
