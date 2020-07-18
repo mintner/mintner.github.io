@@ -197,6 +197,7 @@ function GameOver(game)
     {
         var alert = document.getElementById("turnInfo");
         alert.innerHTML = "It's a tie.";
+
     }
     else if (CheckForWinner(game) === 2)
     {
@@ -209,7 +210,7 @@ function GameOver(game)
         alert.innerHTML = "The computer has won.";
     }
     ShowAverageTime();
-    return true;
+   return true;
 }
 
 function ShowTimes(time) {
