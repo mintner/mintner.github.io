@@ -26,16 +26,6 @@ h1 {
     position: relative;
 }
 
-/*#turnInfo {
-    text-align: center;
-    width: 280px;
-    position: absolute;
-    left: 5px;
-    top: 355px;
-    z-index: 1;
-    font-size: 18px;
-}*/
-
 button {
     position: absolute;
     left: 80px;
@@ -55,5 +45,10 @@ button {
 button:hover {
     background-color: #989999;
     color: whitesmoke;
+}
+
+#gameBoard {
+    box-shadow: 5px 5px rgb(85, 84, 84);
+    border: 2px solid black;
 }
 
